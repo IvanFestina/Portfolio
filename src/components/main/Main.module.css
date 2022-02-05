@@ -1,0 +1,14 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #fcffb0;
+}
+
+.greetings {
+    width: 200px;
+    background-color: rgba(220, 255, 160, 0.82);
+}
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: #ffae82;
+}
