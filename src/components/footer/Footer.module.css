@@ -1,0 +1,8 @@
+.footerBlock {
+    height: 150px;
+    background-color: rgba(176, 255, 197, 0.97);
+    display: flex;
+}
+.container {
+    flex-direction: column;
+}
