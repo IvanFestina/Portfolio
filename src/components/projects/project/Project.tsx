@@ -9,7 +9,6 @@ export type ProjectProps = {
 export const Project = (props: ProjectProps) => {
     return (
         <div className={s.project}>
-
             <div className={s.projectPhoto}>
                 <span>Photo of my project will be placed here</span>
                 <div className={s.projectRef}><a href={''}>Project</a></div>
