@@ -8,12 +8,14 @@ export const Projects = () => {
     return (
         <div className={s.projectBlock}>
             <div className={`${styleContainer.container} ${s.projectContainer}`}>
-                <h2 className={s.title}>My projects</h2>
+                <div  className={s.title}>
+                    <h2>My projects</h2>
+                </div>
                 <div className={s.projects}>
                     <Project title={'Social Network Project'}
-                           description={'This is a model of basic social network to assess my skill'}/>
+                             description={'This is a model of basic social network to assess my skill'}/>
                     <Project title={'TodoList'}
-                           description={'Here you can find interactive todolist for your needs'}/>
+                             description={'Here you can find interactive todolist for your needs'}/>
                 </div>
             </div>
         </div>
