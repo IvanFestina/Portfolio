@@ -1,6 +1,7 @@
 .projectBlock {
-    min-height: 100vh;
-    background-color: #d5ffb9;
+    /*min-height: 100vh;*/
+    background-color: #1f1f20;
+    padding: 100px 0;
 }
 
 .projectContainer {
@@ -10,8 +11,30 @@
 }
 
 .title {
-    background-color: #92fce2;
-    color: black;
+    margin: 0 0 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    background: #4e93e6;
+    width: 55px;
+    height: 1px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
 .projects {
@@ -19,5 +42,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1008px) {
+    .projects {
+        justify-content: center;
+    }
 }

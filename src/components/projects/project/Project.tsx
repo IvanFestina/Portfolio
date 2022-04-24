@@ -10,11 +10,10 @@ export const Project = (props: ProjectProps) => {
     return (
         <div className={s.project}>
             <div className={s.projectPhoto}>
-                <span>Photo of my project will be placed here</span>
-                <div className={s.projectRef}><a href={''}>Project</a></div>
+                <div className={s.viewBtn}><a href={''}>Project</a></div>
             </div>
-            <div className={s.textProjectBlock}>
-                <h3>{props.title}</h3>
+            <div className={s.projectInfo}>
+                <h3 className={s.projectTitle}>{props.title}</h3>
                 <span className={s.description}>{props.description}</span>
             </div>
         </div>
