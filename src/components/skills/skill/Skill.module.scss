@@ -1,0 +1,29 @@
+@import "src/common/styles/sass/variables";
+.skill {
+    width: 200px;
+    background-color: $bgSecondColor;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.title {
+    font-family: $titleFontFamily;
+    color: $textColor;
+}
+
+.description {
+    font-family: $textFontFamily;
+    color: $textColor;
+}

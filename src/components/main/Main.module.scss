@@ -1,0 +1,26 @@
+@import "src/common/styles/sass/variables";
+
+.mainBlock {
+  height: 100vh;
+
+  background: linear-gradient(#101726, #2E3959);
+
+  background-color: $bgColor;
+
+  .greetings {
+    width: 200px;
+    background-color: $bgThirdColor;
+    font-family: $textFontFamily;
+    color: $textColor;
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1%;
+  }
+}
+
+
