@@ -12,7 +12,7 @@
 .icon {
     height: 60px;
     width: 60px;
-    background-color: #ffffff;
+    background-color: $bgSecondColor;
     background-size: cover;
     background-position: center;
 
@@ -20,10 +20,10 @@
 
 .title {
     font-family: $titleFontFamily;
-    color: $textColor;
+    color: $textColorForLight;
 }
 
 .description {
     font-family: $textFontFamily;
-    color: $textColor;
+    color: $textColorForLight;
 }
