@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Footer.module.css'
+import s from './Footer.module.scss'
 import style from '../../common/styles/Container.module.css'
 import {FooterNav} from "./footerNav/FooterNav";
 

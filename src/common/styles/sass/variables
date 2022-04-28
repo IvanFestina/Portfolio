@@ -1,8 +1,8 @@
 
-$textColor: #fff;
-$primaryColor: #A65C41;
-$bgColor: #2E3959;
-$bgSecondColor: #45591B;
-$bgThirdColor: #778C2A;
+$textColorForDark: #FFFFE0;
+$textColorForLight: #294861;
+$primaryColor: #DEB112;
+$bgColor: #294861;
+$bgSecondColor: #FFFFE0;
 $titleFontFamily: 'Josefin Sans', sans-serif;
 $textFontFamily: 'Poppins', sans-serif;

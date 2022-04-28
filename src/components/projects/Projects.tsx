@@ -7,7 +7,6 @@ import DemoTodolistProject from './../../assets/image/DemoTodolistProject.jpg'
 import DemoSocialNetworkProject from './../../assets/image/DemoSocialNetworkProject.png'
 import DemoFlashCardsProject from './../../assets/image/DemoFlashCardsProject.jpg'
 
-
 export const Projects = () => {
 
     const socialNetwork = {
@@ -24,7 +23,7 @@ export const Projects = () => {
     return (
         <div className={s.projectBlock}>
             <div className={`${styleContainer.container} ${s.projectContainer}`}>
-                <Title text={'Projects'}/>
+                <Title text={'Projects'} style={{color: '#FFFFE0'}}/>
                 <div className={s.projects}>
                     <Project title={'Social Network Project'}
                              description={'This is a model of basic social network to assess my skill'}

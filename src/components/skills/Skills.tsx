@@ -3,34 +3,28 @@ import s from './Skills.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./skill/skill";
 import {Title} from "../../common/components/Title";
-import JSTS from "../../assets/image/TSpng.png";
-import HTMLCSS from "../../assets/image/HTMLCSS.png";
-import ReactLogo from "../../assets/image/React.png";
+import {SiJavascript} from 'react-icons/si'
+import {SiRedux} from 'react-icons/si'
+import {SiHtml5} from 'react-icons/si'
 
 
 export const Skills = () => {
 
 
-    const JS_TS = {
-        backgroundImage: `url(${JSTS})`
-    }
-    const HTML_CSS = {
-        backgroundImage: `url(${HTMLCSS})`
-    }
-    const React_Logo = {
-        backgroundImage: `url(${ReactLogo})`
-    }
-
     return (
         <div className={s.skillBlock}>
             <div className={`${styleContainer.container} ${s.skillContainer}`}>
-                <Title text={'Skills'}/>
+                <Title text={'Skills'} style={{color: '#294861'}}/>
                 <div className={s.skills}>
-                    <Skill title={'HTML CSS'} style={HTML_CSS}
+                    <Skill title={'HTML'} icon={<SiHtml5 color='#DEB112' size={'4rem'}/>}
                            description={'Using my knowledge to make UI more interactive and adaptable'}/>
-                    <Skill title={'TypeScript'} style={JS_TS}
+                    <Skill title={'CSS/SCSS'} icon={<SiJavascript color='#DEB112' size={'4rem'}/>}/>
+                    <Skill title={'JavaScript'} icon={''}
                            description={'Applying JavaScript with TypeScript to make apps more stable'}/>
-                    <Skill title={'React'} style={React_Logo} description={'Using this library to make magic happen'}/>
+                    <Skill title={'TypeScript'} icon={<SiJavascript color='#DEB112' size={'4rem'}/>}/>
+                    <Skill title={'React'} description={'Using this library to make magic happen'} icon={''}/>
+                    <Skill title={'Redux'} icon={<SiRedux color='#DEB112' size={'4rem'}/>}/>
+                    <Skill title={'Redux Toolkit'} icon={<SiJavascript color='#DEB112' size={'4rem'}/>}/>
                 </div>
             </div>
         </div>

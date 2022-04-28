@@ -2,16 +2,13 @@
 
 .mainBlock {
   height: 100vh;
-
-  background: linear-gradient(#101726, #2E3959);
-
   background-color: $bgColor;
 
   .greetings {
     width: 200px;
-    background-color: $bgThirdColor;
+    background-color: $bgColor;
     font-family: $textFontFamily;
-    color: $textColor;
+    color: $textColorForDark;
   }
 
   .photo {
