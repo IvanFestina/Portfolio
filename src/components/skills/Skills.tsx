@@ -6,6 +6,7 @@ import {Title} from "../../common/components/Title";
 import {SiJavascript} from 'react-icons/si'
 import {SiRedux} from 'react-icons/si'
 import {SiHtml5} from 'react-icons/si'
+import {SiCsswizardry} from 'react-icons/si'
 
 
 export const Skills = () => {
@@ -16,15 +17,14 @@ export const Skills = () => {
             <div className={`${styleContainer.container} ${s.skillContainer}`}>
                 <Title text={'Skills'} style={{color: '#294861'}}/>
                 <div className={s.skills}>
-                    <Skill title={'HTML'} icon={<SiHtml5 color='#DEB112' size={'4rem'}/>}
+                    <Skill title={'HTML'} icon={<SiHtml5 color='#294861' size={'4rem'}/>}
                            description={'Using my knowledge to make UI more interactive and adaptable'}/>
-                    <Skill title={'CSS/SCSS'} icon={<SiJavascript color='#DEB112' size={'4rem'}/>}/>
-                    <Skill title={'JavaScript'} icon={''}
-                           description={'Applying JavaScript with TypeScript to make apps more stable'}/>
-                    <Skill title={'TypeScript'} icon={<SiJavascript color='#DEB112' size={'4rem'}/>}/>
+                    <Skill title={'CSS/SCSS'} icon={<SiCsswizardry color='#FFFFE0' size={'4rem'}/>}/>
+                    <Skill title={'JavaScript'} icon={<SiJavascript color='#FFFFE0' size={'4rem'}/>}/>
+                    <Skill title={'TypeScript'} icon={<SiJavascript color=' #FFFFE0' size={'4rem'}/>}/>
                     <Skill title={'React'} description={'Using this library to make magic happen'} icon={''}/>
-                    <Skill title={'Redux'} icon={<SiRedux color='#DEB112' size={'4rem'}/>}/>
-                    <Skill title={'Redux Toolkit'} icon={<SiJavascript color='#DEB112' size={'4rem'}/>}/>
+                    <Skill title={'Redux'} icon={<SiRedux color=' #FFFFE0' size={'4rem'}/>}/>
+                    <Skill title={'Redux Toolkit'} icon={<SiJavascript color=' #FFFFE0' size={'4rem'}/>}/>
                 </div>
             </div>
         </div>

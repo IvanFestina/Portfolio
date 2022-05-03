@@ -11,15 +11,14 @@ export type SkillProps = {
 export const Skill = (props: SkillProps) => {
     return (
         <div className={s.skill}>
-            <div className={s.icon} />
+            <div className={s.square}>
+                <div className={s.icon}>
+                    {props.icon}
+                </div>
+            </div>
             <h3 className={s.title} style={props.style}>
-            {props.title}
+                {props.title}
             </h3>
-            {props.icon}
-            {/*<span className={s.description}>*/}
-            {/*    {props.description}*/}
-            {/*</span>*/}
-
         </div>
     )
 }

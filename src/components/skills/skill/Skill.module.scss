@@ -1,29 +1,30 @@
 @import "src/common/styles/sass/variables";
-.skill {
-    width: 200px;
-    background-color: $bgSecondColor;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
 
+.skill {
+  width: 200px;
+  background-color: $bgSecondColor;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.icon {
-    height: 60px;
-    width: 60px;
-    background-color: $bgSecondColor;
-    background-size: cover;
-    background-position: center;
+.square {
+  width: 100px;
+  height: 100px;
+  background: $primaryColor;
+  transform: rotate(45deg);
 
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+    height: 100%;
+  }
 }
 
 .title {
-    font-family: $titleFontFamily;
-    color: $textColorForLight;
-}
-
-.description {
-    font-family: $textFontFamily;
-    color: $textColorForLight;
+  font-family: $titleFontFamily;
+  color: $textColorForLight;
 }
