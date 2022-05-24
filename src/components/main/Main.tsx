@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Main.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
-import MainPhoto from '../../assets/image/MainPhoto.jpg'
+import MainPhoto from '../../assets/image/AvaMain.jpg'
 export const Main = () => {
 
  const Main_Photo = {
