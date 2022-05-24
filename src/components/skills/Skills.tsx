@@ -3,10 +3,14 @@ import s from './Skills.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./skill/skill";
 import {Title} from "../../common/components/Title";
-import {SiJavascript} from 'react-icons/si'
-import {SiRedux} from 'react-icons/si'
-import {SiHtml5} from 'react-icons/si'
-import {SiCsswizardry} from 'react-icons/si'
+import {
+    SiCss3,
+    SiJavascript,
+    SiRedux,
+    SiHtml5,
+    SiTypescript,
+    SiReact
+} from 'react-icons/si'
 
 
 export const Skills = () => {
@@ -19,11 +23,11 @@ export const Skills = () => {
                 <div className={s.skills}>
                     <Skill title={'HTML'} icon={<SiHtml5 color='#294861' size={'4rem'}/>}
                            description={'Using my knowledge to make UI more interactive and adaptable'}/>
-                    <Skill title={'CSS/SCSS'} icon={<SiCsswizardry color='#FFFFE0' size={'4rem'}/>}/>
+                    <Skill title={'CSS/SCSS'} icon={<SiCss3 color='#FFFFE0' size={'4rem'}/>}/>
                     <Skill title={'JavaScript'} icon={<SiJavascript color='#FFFFE0' size={'4rem'}/>}/>
-                    <Skill title={'TypeScript'} icon={<SiJavascript color=' #FFFFE0' size={'4rem'}/>}/>
-                    <Skill title={'React'} description={'Using this library to make magic happen'} icon={''}/>
-                    <Skill title={'Redux'} icon={<SiRedux color=' #FFFFE0' size={'4rem'}/>}/>
+                    <Skill title={'TypeScript'} icon={<SiTypescript color=' #FFFFE0' size={'4rem'}/>}/>
+                    <Skill title={'React'} icon={<SiReact color=' #FFFFE0' size={'4rem'}/>} description={'Using this library to make magic happen'}/>
+                    <Skill title={'Redux/Toolkit'} icon={<SiRedux color=' #FFFFE0' size={'4rem'}/>}/>
                     <Skill title={'Redux Toolkit'} icon={<SiJavascript color=' #FFFFE0' size={'4rem'}/>}/>
                 </div>
             </div>
