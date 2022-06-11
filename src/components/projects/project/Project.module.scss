@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 
   .projectImage {
     display: flex;
@@ -48,14 +49,14 @@
     padding: 25px 20px;
 
     .projectTitle {
-      @include text($titleFontFamily, 18px, 1.2, $textColorForDark);
+      @include text($titleFontFamily, 22px, 1.2, $textColorForDark);
       letter-spacing: 1px;
       text-align: center;
       margin: 0 0 5px;
     }
 
     .description {
-    @include text($textFontFamily, 13px, 1.8, $textColorForDark);
+    @include text($textFontFamily, $textSize, 1.8, $textColorForDark);
       font-weight: 400;
     }
   }
