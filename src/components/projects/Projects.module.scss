@@ -11,6 +11,8 @@
     flex-direction: column;
 
     .projects {
+      font-family: $textFontFamily;
+      font-size: $textSize;
       width: 100%;
       display: flex;
       justify-content: space-between;
