@@ -6,5 +6,5 @@ $bgColor: #294861;
 $bgSecondColor: #FFFFE0;
 $titleFontFamily: 'Acumin', sans-serif;
 $textFontFamily: 'Acumin', sans-serif;
-$titleSize: 30px;
+$titleSize: 28px;
 $textSize: 18px;
