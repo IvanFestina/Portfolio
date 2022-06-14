@@ -1,24 +1,33 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixin";
 
 .mainBlock {
   height: 100vh;
   background-color: $bgColor;
 
-  .greetings {
-    width: 200px;
-    background-color: $bgColor;
-    font-family: $textFontFamily;
-    font-size: $textSize;
-    color: $textColorForDark;
+  .mainContainer {
+    @include container();
+    @include flex(row, space-around, center, wrap);
+    min-height: 100%;
+    .greetings {
+      width: 300px;
+      background-color: $bgColor;
+      font-family: $textFontFamily;
+      font-size: 30px;
+      line-height: 180%;
+      color: $textColorForDark;
+    }
+
+    .photo {
+      width: 400px;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 1%;
+    }
   }
 
-  .photo {
-    width: 300px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 1%;
-  }
+
 }
 
 

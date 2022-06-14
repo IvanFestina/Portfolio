@@ -47,7 +47,7 @@ export const Contacts = () => {
 
     return (
         <div id='contacts' className={s.contactsBlock}>
-            <div className={`${style.container} ${s.contactsContainer}`}>
+            <div className={s.contactsContainer}>
                 <Title text={'Contacts'} style={{color: '#294861'}}/>
                 <div className={s.form}>
                     <CssTextField className={s.mUIInput}
