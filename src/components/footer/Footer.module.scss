@@ -1,13 +1,15 @@
 @import "../../common/styles/sass/variables";
+@import "src/common/styles/sass/mixin";
+
 
 .footerBlock {
-  height: 150px;
+  min-height: 150px;
   background-color: $bgColor;
-  display: flex;
 
   .container {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    padding: 15px 0;
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
 
     .title {
       font-family: $textFontFamily;
@@ -17,22 +19,32 @@
     }
 
     .socialIcons {
+      margin-top: 15px;
       width: 250px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex(raw, space-between, center, nowrap);
 
       .socialIcon {
+        a {
+          @include flex(row, center, center, nowrap);
+        }
+
+        @include flex(raw, center, center, nowrap);
         width: 50px;
         height: 50px;
         background-color: $primaryColor;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out 0s;
+
+        &:hover {
+          border: 1px solid $textColorForDark;
+
+        }
       }
     }
 
     .rights {
+      margin-top: 15px;
       font-family: $textFontFamily;
       font-size: 15px;
       color: $textColorForDark;

@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Main.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
 import MainPhoto from '../../assets/image/AvaMain.jpg'
+import Particles from "react-tsparticles";
 export const Main = () => {
 
  const Main_Photo = {
@@ -10,7 +10,7 @@ export const Main = () => {
 
     return (
         <div className={s.mainBlock}>
-            <div className={styleContainer.container}>
+            <div className={s.mainContainer}>
                 <div className={s.greetings}>
                     <span>Hi there!</span>
                     <h1>I'm Ivan</h1>

@@ -1,20 +1,19 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixin";
 
 .skillBlock {
-  min-height: 100vh;
   background-color: $bgSecondColor;
 
   .skillContainer {
+    padding: 70px 24px;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
 
     .skills {
-      border: 1px solid black;
+      @include flex(row, space-between, flex-start, wrap);
+      margin-top: 60px;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
       font-family: $textFontFamily;
       font-size: $textSize;
       @media screen and (max-width: 503px) {

@@ -24,26 +24,24 @@ export const Skills = () => {
                 <Title text={'Skills'} style={{color: '#294861'}}/>
                 <div className={s.skills}>
                     <Skill title={'JavaScript'}
-                           icon={<SiJavascript color='#FFFFE0' size={'4rem'}/>}/>
+                           icon={<SiJavascript color='#FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'TypeScript'}
-                           icon={<SiTypescript color=' #FFFFE0' size={'4rem'}/>}/>
+                           icon={<SiTypescript color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'React'}
-                           icon={<SiReact color=' #FFFFE0' size={'4rem'}/>}
-                           description={'Using this library to make magic happen'}/>
+                           icon={<SiReact color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Redux/Thunk/Toolkit'}
-                           icon={<SiRedux color=' #FFFFE0' size={'4rem'}/>}/>
+                           icon={<SiRedux color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Formik / React-Hook-Form'}
-                           icon={<FaWpforms color=' #FFFFE0' size={'4rem'}/>}/>
+                           icon={<FaWpforms color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'MaterialUI / AntDesign'}
-                           icon={<SiMaterialui color=' #FFFFE0' size={'4rem'}/>}/>
+                           icon={<SiMaterialui color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Git / GitHub'}
-                           icon={<FaGithubSquare color=' #FFFFE0' size={'4rem'}/>}/>
+                           icon={<FaGithubSquare color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Storybook'}
-                           icon={<SiStorybook color=' #FFFFE0' size={'4rem'}/>}/>
+                           icon={<SiStorybook color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'TDD, Jest'}
-                           icon={<SiJest color=' #FFFFE0' size={'4rem'}/>}/>
-                    <Skill title={'Axios'} icon={<FaExchangeAlt color='#FFFFE0' size={'4rem'}/>}
-                           description={'Using my knowledge to make UI more interactive and adaptable'}/>
+                           icon={<SiJest color=' #FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'Axios'} icon={<FaExchangeAlt color='#FFFFE0' size={'3rem'}/>}/>
                 </div>
             </div>
         </div>
