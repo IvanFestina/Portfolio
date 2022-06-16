@@ -1,15 +1,18 @@
 import React from "react";
 import s from './Main.module.scss'
 import MainPhoto from '../../assets/image/AvaMain.jpg'
-import Particles from "react-tsparticles";
-export const Main = () => {
+// import {ParticlesComponent} from "../../common/particles/particles";
+import {ParticlesComponent} from "../../common/particles/particles";
 
- const Main_Photo = {
-        backgroundImage: `url( ${MainPhoto} )`
-    }
+const Main_Photo = {
+    backgroundImage: `url( ${MainPhoto} )`
+}
+
+export const Main = () => {
 
     return (
         <div className={s.mainBlock}>
+            <ParticlesComponent />
             <div className={s.mainContainer}>
                 <div className={s.greetings}>
                     <span>Hi there!</span>
@@ -18,6 +21,7 @@ export const Main = () => {
                 </div>
                 <div className={s.photo} style={Main_Photo}/>
             </div>
+
         </div>
     )
 }

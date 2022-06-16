@@ -2,7 +2,7 @@ import React from "react";
 import s from './Skills.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./skill/skill";
-import {Title} from "../../common/components/Title";
+import {Title} from "../../common/Title/Title";
 import {
     SiCss3,
     SiJavascript,
