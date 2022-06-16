@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Projects.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Project} from './project/Project';
-import {Title} from '../../common/components/Title';
+import {Title} from '../../common/Title/Title';
 import DemoTodolistProject from './../../assets/image/DemoTodolistProject.jpg'
 import DemoSocialNetworkProject from './../../assets/image/DemoSocialNetworkProject.png'
 import DemoFlashCardsProject from './../../assets/image/DemoFlashCardsProject.jpg'

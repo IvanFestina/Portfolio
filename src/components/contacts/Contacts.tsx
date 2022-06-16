@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import s from './Contacts.module.scss'
 import style from '../../common/styles/Container.module.css'
-import {Title} from "../../common/components/Title";
+import {Title} from "../../common/Title/Title";
 import {useFormik} from "formik";
 import TextField from "@material-ui/core/TextField/TextField";
 import {styled} from "@material-ui/core";

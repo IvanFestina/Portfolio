@@ -1,17 +1,20 @@
 @import "src/common/styles/sass/variables";
 @import "src/common/styles/sass/mixin";
 
+
 .mainBlock {
   height: 100vh;
-  background-color: $bgColor;
+  position: relative;
+  //background-color: $bgColor;
 
   .mainContainer {
     @include container();
     @include flex(row, space-around, center, wrap);
     min-height: 100%;
+
     .greetings {
       width: 300px;
-      background-color: $bgColor;
+      //background-color: $bgColor;
       font-family: $textFontFamily;
       font-size: 30px;
       line-height: 180%;
