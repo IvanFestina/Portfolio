@@ -33,13 +33,13 @@
         height: 50px;
         background-color: $primaryColor;
 
-        border: 1px solid transparent;
+        //border: 1px solid transparent;
         transition: all 0.3s ease-in-out 0s;
 
-        &:hover {
-          border: 1px solid $textColorForDark;
-
-        }
+        //&:hover {
+        //  border: 1px solid $textColorForDark;
+        //
+        //}
       }
     }
 

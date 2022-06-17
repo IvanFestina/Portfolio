@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import {loadSlim} from "tsparticles-slim";
 
-export function ParticlesComponent(props: any) {
+export const ParticlesComponent = () => {
     const particlesInit = (engine: any) => {
         loadSlim(engine)
     }
@@ -16,13 +16,11 @@ export function ParticlesComponent(props: any) {
                     repeat: "no-repeat",
                     size: "cover"
                 },
-                fpsLimit: 60,
                 fullScreen: {
                     enable: true,
                     zIndex: -1
                 },
                 interactivity: {
-                    detectsOn: "canvas",
                     events: {
                         onClick: {
                             enable: true,
@@ -49,13 +47,6 @@ export function ParticlesComponent(props: any) {
                     color: {
                         value: "#FFFFE0"
                     },
-                    links: {
-                        color: {
-                            value: "#ffffff"
-                        },
-                        distance: 150,
-                        opacity: 0.4
-                    },
                     move: {
                         attract: {
                             rotate: {
@@ -64,10 +55,8 @@ export function ParticlesComponent(props: any) {
                             }
                         },
                         enable: true,
-                        path: {},
                         random: true,
                         speed: 0.75,
-                        spin: {}
                     },
                     number: {
                         density: {
@@ -78,7 +67,6 @@ export function ParticlesComponent(props: any) {
                         value: 100
                     },
                     opacity: {
-
                         value: {
                             min: 0,
                             max: 1
@@ -90,7 +78,6 @@ export function ParticlesComponent(props: any) {
                         }
                     },
                     size: {
-
                         value: {
                             min: 1,
                             max: 2

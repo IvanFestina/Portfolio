@@ -4,25 +4,28 @@ import styleContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./skill/skill";
 import {Title} from "../../common/Title/Title";
 import {
-    SiCss3,
     SiJavascript,
+    SiJest,
+    SiMaterialui,
+    SiReact,
     SiRedux,
-    SiHtml5,
-    SiTypescript,
-    SiReact, SiMaterialui, SiStorybook, SiJest
+    SiStorybook,
+    SiTypescript
 } from 'react-icons/si'
 import {FaExchangeAlt, FaWpforms} from "react-icons/fa/";
 import {FaGithubSquare} from "react-icons/fa";
+import {motion} from "framer-motion";
+import {FiFramer} from "react-icons/fi";
 
 
 export const Skills = () => {
-
 
     return (
         <div className={s.skillBlock}>
             <div className={`${styleContainer.container} ${s.skillContainer}`}>
                 <Title text={'Skills'} style={{color: '#294861'}}/>
-                <div className={s.skills}>
+                <div
+                    className={s.skills}>
                     <Skill title={'JavaScript'}
                            icon={<SiJavascript color='#FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'TypeScript'}
@@ -41,7 +44,10 @@ export const Skills = () => {
                            icon={<SiStorybook color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'TDD, Jest'}
                            icon={<SiJest color=' #FFFFE0' size={'3rem'}/>}/>
-                    <Skill title={'Axios'} icon={<FaExchangeAlt color='#FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'Axios'}
+                           icon={<FaExchangeAlt color='#FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'Framer Motion'}
+                           icon={<FiFramer color=' #FFFFE0' size={'3rem'}/>}/>
                 </div>
             </div>
         </div>
