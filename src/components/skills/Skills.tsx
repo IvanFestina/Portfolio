@@ -21,8 +21,8 @@ import {FiFramer} from "react-icons/fi";
 export const Skills = () => {
 
     return (
-        <div className={s.skillBlock}>
-            <div className={`${styleContainer.container} ${s.skillContainer}`}>
+        <div id='skills' className={s.skillsBlock}>
+            <div className={s.skillsContainer}>
                 <Title text={'Skills'} style={{color: '#294861'}}/>
                 <div
                     className={s.skills}>

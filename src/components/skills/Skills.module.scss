@@ -1,25 +1,21 @@
 @import "src/common/styles/sass/variables";
 @import "src/common/styles/sass/mixin";
 
-.skillBlock {
+.skillsBlock {
   background-color: $bgSecondColor;
 
-  .skillContainer {
+  .skillsContainer {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
     padding: 70px 24px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
 
     .skills {
       @include flex(row, space-between, flex-start, wrap);
+      @include text($textFontFamily, $textSize, 1em, $textColorForLight);
       margin-top: 60px;
       width: 100%;
-      font-family: $textFontFamily;
-      font-size: $textSize;
-      @media screen and (max-width: 503px) {
-        .skills {
-          justify-content: center;
-        }
+      @media screen and (max-width: 575px) {
+        justify-content: center;
       }
     }
   }

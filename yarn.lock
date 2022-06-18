@@ -2091,6 +2091,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-scroll@^1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@types/react-scroll/-/react-scroll-1.8.3.tgz#80951ed1934ab49d4926aad95c26607b8b1a9713"
+  integrity sha512-Xt0+Y58pwrIv+vRFxcyKDoo0gBWBR2eNMJ4XRMhQpZdGUtmjnszPi/wFEJSAY+5r83ypJsSA+hOpSc3hRpYlWw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@^4.2.0":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.4.tgz#acd4cceaa2be6b757db61ed7b432e103242d163e"
@@ -8018,7 +8025,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -8146,6 +8153,16 @@ react-dev-utils@^12.0.0:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
+react-dom@^16.13.1:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
+  integrity sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
+
 react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -8193,13 +8210,6 @@ react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
-
-react-reveal@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-1.2.2.tgz#f47fbc44debc4c185ae2163a215a9e822c7adfef"
-  integrity sha512-JCv3fAoU6Z+Lcd8U48bwzm4pMZ79qsedSXYwpwt6lJNtj/v5nKJYZZbw3yhaQPPgYePo3Y0NOCoYOq/jcsisuw==
-  dependencies:
-    prop-types "^15.5.10"
 
 react-scripts@5.0.0:
   version "5.0.0"
@@ -8256,6 +8266,14 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-scroll@^1.8.7:
+  version "1.8.7"
+  resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.8.7.tgz#8020035329efad00f03964e18aff6822137de3aa"
+  integrity sha512-fBOIwweAlhicx8RqP9tQXn/Uhd+DTtVRjw+0VBsIn1Z+MjRYLhTZ0tMoTAU1vOD3dce8mI6copexI4yWII+Luw==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.7.2"
+
 react-transition-group@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
@@ -8285,12 +8303,22 @@ react-tsparticles@^2.0.6:
     fast-deep-equal "^3.1.3"
     tsparticles-engine "^2.0.6"
 
-react-typist@^2.0.5:
+react-typing-effect@^2.0.5:
   version "2.0.5"
-  resolved "https://registry.yarnpkg.com/react-typist/-/react-typist-2.0.5.tgz#9830395a73a03e6368e1392ecb98edaa3a648e44"
-  integrity sha512-iZCkeqeegO0TlkTMiH2JD1tvMtY9RrXkRylnAI6m8aCVAUUwNzoWTVF7CKLij6THeOMcUDCznLDDvNp55s+YZA==
+  resolved "https://registry.yarnpkg.com/react-typing-effect/-/react-typing-effect-2.0.5.tgz#96780526d6958d553e2805124a2aa96c92764f09"
+  integrity sha512-IyVHASfzkdsWYw+/gvh2g1lwMf/ctpWhQHgMZHXQinKWxW8529XDhLGd9KTfnK5yUPLPaucdtA9GZFjIOjKCVg==
   dependencies:
-    prop-types "^15.5.10"
+    react "^16.13.1"
+    react-dom "^16.13.1"
+
+react@^16.13.1:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
 
 react@^17.0.2:
   version "17.0.2"
@@ -8646,6 +8674,14 @@ saxes@^5.0.1:
   integrity sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
   dependencies:
     xmlchars "^2.2.0"
+
+scheduler@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
+  integrity sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@^0.20.2:
   version "0.20.2"

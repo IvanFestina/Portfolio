@@ -3,13 +3,13 @@
     border: 1px solid black;
 }
 ::-webkit-scrollbar{
-  width: 15px;
+  width: 14px;
 }
 ::-webkit-scrollbar-track{
   background: #254661;
 }
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(#c99d0e, #DEB112);
+  background: rgba(255, 255, 224, 0.72);
   border-radius: 25px;
 }
 
