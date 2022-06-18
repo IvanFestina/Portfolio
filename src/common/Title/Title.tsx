@@ -3,7 +3,7 @@ import s from './Title.module.scss'
 import {motion} from "framer-motion";
 
 
-type TitlePropsType = { text: string, style?: object }
+type TitlePropsType = { text: string, style?: object}
 
 const titleAnimation = {
     hidden: {
@@ -22,7 +22,8 @@ export const Title = ({text, style}: TitlePropsType) => {
                     whileInView='visible' variants={titleAnimation}
                     transition={{delay: 0.4, duration: 0.5}} style={style}>
             <motion.h2 variants={titleAnimation}
-                       transition={{delay: 0.2, duration: 0.5}}>{text}</motion.h2>
+                       transition={{delay: 0.2, duration: 0.5}}>{text}
+            </motion.h2>
         </motion.div>
     )
 }

@@ -1,9 +1,10 @@
 import React from "react";
-import s from './Main.module.scss'
-import MainPhoto from '../../assets/image/AvaMain.jpg'
-// import {ParticlesComponent} from "../../common/particles/particles";
+import s from './About.module.scss'
+import MainPhoto from '../../assets/image/Ava2.jpg'
 import {ParticlesComponent} from "../../common/particles/particles";
 import {motion} from "framer-motion";
+//@ts-ignore
+import ReactTypingEffect from 'react-typing-effect'
 
 
 const titleAnimation = {
@@ -20,22 +21,25 @@ const titleAnimation = {
 const Main_Photo = {
     backgroundImage: `url( ${MainPhoto} )`
 }
-
-export const Main = () => {
-
+export const About = () => {
 
     return (
-        <div className={s.mainBlock}>
+        <div id='about' className={s.aboutBlock}>
             <ParticlesComponent/>
             <motion.div initial='hidden'
                         whileInView='visible' variants={titleAnimation}
                         transition={{delay: 0.4, duration: 0.5}}
-                        className={s.mainContainer}>
+                        className={s.aboutContainer}>
                 <div className={s.greetings}>
                     <span>Hi there!</span>
                     <h1>I'm Ivan</h1>
                     <p>And I'm a</p>
-                    <span>Front-End Developer</span>
+                    <ReactTypingEffect
+                            speed={100}
+                            eraseSpeed = {100}
+                            typingDelay ={800}
+                            text={["Front-end developer"]}
+                        />
                 </div>
                 <div className={s.photo} style={Main_Photo}/>
             </motion.div>

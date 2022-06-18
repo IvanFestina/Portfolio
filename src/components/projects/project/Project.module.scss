@@ -4,18 +4,12 @@
 .project {
   width: 450px;
   background-color: $bgColor;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  @include flex(column, center, center, nowrap);
 
   .projectImage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center, nowrap);
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,13 +26,26 @@
       opacity: 0.4;
     }
 
+    &:hover::before {
+      opacity: 0;
+      transition: ease;
+      transition-duration: 1s;
+    }
+
+
     .viewBtn {
-      background-color: $primaryColor;
-      padding: 10px 20px;
+      background: $primaryColor;
+      border: none;
+      margin-top: 5px;
+      padding: 20px 30px;
       position: relative;
+      border-radius: 10px;
       z-index: 1;
-      color: $textColorForDark;
-      font-family: $titleFontFamily;
+      @include text($titleFontFamily, 14pt, .1rem, $textColorForDark);
+
+      &:hover {
+        cursor: pointer;
+      }
 
       a:link {
         text-decoration: none;
@@ -63,4 +70,3 @@
     }
   }
 }
-
