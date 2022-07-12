@@ -4,6 +4,7 @@ import {Title} from "../../common/Title/Title";
 import {useFormik} from "formik";
 import TextField from "@material-ui/core/TextField/TextField";
 import {styled} from "@material-ui/core";
+import axios from 'axios';
 
 type FormikErrorType = {
     name?: string
@@ -40,7 +41,17 @@ export const Contacts = () => {
             return errors;
         },
         onSubmit: values => {
-
+            debugger
+            axios.post("http://localhost:3010/sendMessage", {
+                name: values.name,
+                email: values.email,
+                message: values.message
+            })
+                .then(() => {
+                    debugger
+                    alert(values)
+                })
+                .catch(error => {console.log(error.message)})
         }
     })
 
@@ -48,7 +59,7 @@ export const Contacts = () => {
         <div id='contacts' className={s.contactsBlock}>
             <div className={s.contactsContainer}>
                 <Title text={'Contacts'} style={{color: '#294861'}}/>
-                <div className={s.form}>
+                <form className={s.form} onSubmit={formik.handleSubmit}>
                     <CssTextField className={s.mUIInput}
                                   InputLabelProps={{className: s.label}}
                                   id="custom-css-outlined-input"
@@ -59,7 +70,7 @@ export const Contacts = () => {
                         formik.touched.name
                         && formik.errors.name
                         && <div
-                            style={{color: '#294861'}}>{formik.errors.name}</div>
+                            style={{color: '#DEB112'}}>{formik.errors.name}</div>
                     }
 
                     <CssTextField className={s.mUIInput}
@@ -71,7 +82,7 @@ export const Contacts = () => {
                     {formik.touched.email
                     && formik.errors.email
                     &&
-                    <div style={{color: '#294861'}}>{formik.errors.name}</div>
+                    <div style={{color: '#DEB112'}}>{formik.errors.name}</div>
                     }
 
                     <CssTextField className={s.mUITextarea}
@@ -85,12 +96,12 @@ export const Contacts = () => {
                         formik.touched.message
                         && formik.errors.message
                         && <div
-                            style={{color: '#294861'}}>{formik.errors.message}</div>}
+                            style={{color: '#DEB112'}}>{formik.errors.message}</div>}
 
                     <div className={s.terms}>
-                        <button className={s.button}>Send</button>
+                        <button className={s.button} type="submit">Send</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     )
