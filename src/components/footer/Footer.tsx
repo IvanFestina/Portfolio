@@ -16,10 +16,10 @@ export const Footer = () => {
                         color='#294861'
                         size={'3rem'}/></a></motion.div>
                     <motion.div className={s.socialIcon} whileHover={{scale: 1.4}}><a
-                        href=""><FaTelegram color='#294861'
+                        href="https://t.me/ivanfestina"><FaTelegram color='#294861'
                                             size={'3rem'}/></a></motion.div>
                     <motion.div className={s.socialIcon} whileHover={{scale: 1.4}}><a
-                        href=""><FaGithubSquare
+                        href="https://github.com/IvanFestina"><FaGithubSquare
                         color='#294861'
                         size={'3rem'}/></a></motion.div>
                 </div>
