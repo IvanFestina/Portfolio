@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a889237.css",
-    "main.js": "/static/js/main.da599502.js",
-    "static/media/Ava2.jpg": "/static/media/Ava2.3cab5267586614b568a5.jpg",
-    "static/media/DemoFlashCardsProject.jpg": "/static/media/DemoFlashCardsProject.fcccc3b91f5f59b925c6.jpg",
-    "static/media/DemoSocialNetworkProject.png": "/static/media/DemoSocialNetworkProject.968c042834394999fb30.png",
-    "static/media/DemoTodolistProject.jpg": "/static/media/DemoTodolistProject.8caba79aeaca5523aea9.jpg",
-    "index.html": "/index.html",
-    "main.5a889237.css.map": "/static/css/main.5a889237.css.map",
-    "main.da599502.js.map": "/static/js/main.da599502.js.map"
+    "main.css": "/Portfolio/static/css/main.5a889237.css",
+    "main.js": "/Portfolio/static/js/main.1b7b8143.js",
+    "static/media/Ava2.jpg": "/Portfolio/static/media/Ava2.3cab5267586614b568a5.jpg",
+    "static/media/DemoFlashCardsProject.jpg": "/Portfolio/static/media/DemoFlashCardsProject.fcccc3b91f5f59b925c6.jpg",
+    "static/media/DemoSocialNetworkProject.png": "/Portfolio/static/media/DemoSocialNetworkProject.968c042834394999fb30.png",
+    "static/media/DemoTodolistProject.jpg": "/Portfolio/static/media/DemoTodolistProject.8caba79aeaca5523aea9.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.5a889237.css.map": "/Portfolio/static/css/main.5a889237.css.map",
+    "main.1b7b8143.js.map": "/Portfolio/static/js/main.1b7b8143.js.map"
   },
   "entrypoints": [
     "static/css/main.5a889237.css",
-    "static/js/main.da599502.js"
+    "static/js/main.1b7b8143.js"
   ]
 }
