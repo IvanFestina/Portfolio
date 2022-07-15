@@ -45,7 +45,7 @@ export const Contacts = () => {
         //close your eyes here)
             debugger
             setDisabled(true)
-            axios.post("http://localhost:3010/sendMessages", {
+            axios.post("https://smtp-gmail-portfolio.herokuapp.com/sendMessages", {
                 name: values.name,
                 email: values.email,
                 message: values.message
