@@ -15,6 +15,7 @@ type FormikErrorType = {
 export const Contacts = () => {
 
     const [message, setMessage] = useState<string>('The message was sent')
+    const [disabled, setDisabled] = useState<boolean>(false)
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -41,17 +42,23 @@ export const Contacts = () => {
             return errors;
         },
         onSubmit: values => {
+        //close your eyes here)
             debugger
-            axios.post("http://localhost:3010/sendMessage", {
+            setDisabled(true)
+            axios.post("http://localhost:3010/sendMessages", {
                 name: values.name,
                 email: values.email,
                 message: values.message
             })
                 .then(() => {
                     debugger
-                    alert(values)
+                    console.log(values)
                 })
-                .catch(error => {console.log(error.message)})
+                .catch(error => {
+                    debugger
+                    console.log(error.message)
+                })
+                .finally(() => setDisabled(false))
         }
     })
 
@@ -99,7 +106,7 @@ export const Contacts = () => {
                             style={{color: '#DEB112'}}>{formik.errors.message}</div>}
 
                     <div className={s.terms}>
-                        <button className={s.button} type="submit">Send</button>
+                        <button className={s.button} disabled={disabled} type="submit">Send</button>
                     </div>
                 </form>
             </div>
