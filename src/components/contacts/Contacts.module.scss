@@ -60,6 +60,11 @@
       @include text($titleFontFamily, 14pt, .1rem, $textColorForDark);
     }
 
+    .button.disabled{
+      background: #a4b5c1;
+      @include text($titleFontFamily, 16pt, .1rem, $textColorForDark);
+    }
+
     .button:hover {
       background: $primaryColor;
       color: $textColorForDark;

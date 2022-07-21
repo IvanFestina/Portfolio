@@ -26,7 +26,10 @@ export const Projects = () => {
                 <div id='projects' className={s.projects}>
                     <Project title={'Memorize'}
                              description={'Team project for learning and memorizing with use of cards'}
-                             style={flashCards}/>
+                             style={flashCards}
+                             urlDemo={'https://github.com/msseleznev/friday-app'}
+                             urlCode={'https://github.com/msseleznev/friday-app'}
+                             />
                     <Project title={'TodoList'}
                              description={'Here you can find interactive todolist for your needs'}
                              style={todolist}
@@ -36,6 +39,14 @@ export const Projects = () => {
                     <Project title={'Social Network Project'}
                              description={'This is a model of basic social network to assess my skill'}
                              style={socialNetwork}
+                             urlDemo={''}
+                             urlCode={''}
+                    />
+                    <Project title={'Taxi - React Native App'}
+                             description={'Frontend part of a mobile app for ordering a taxi, picking up a destination and more'}
+                             style={''}
+                             urlDemo={''}
+                             urlCode={''}
                     />
                 </div>
             </div>
