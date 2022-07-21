@@ -5,6 +5,7 @@ import {useFormik} from "formik";
 import TextField from "@material-ui/core/TextField/TextField";
 import {styled} from "@material-ui/core";
 import axios from 'axios';
+import Modal from "../../common/components/Modal";
 
 type FormikErrorType = {
     name?: string
@@ -14,7 +15,8 @@ type FormikErrorType = {
 
 export const Contacts = () => {
 
-    const [message, setMessage] = useState<string>('The message was sent')
+    const [isModal, setIsModal] = useState<boolean>(false)
+    const [message, setMessage] = useState<string>('The message was sent. Hope to contact you soon! =)')
     const [disabled, setDisabled] = useState<boolean>(false)
     const formik = useFormik({
         initialValues: {
@@ -42,7 +44,7 @@ export const Contacts = () => {
             return errors;
         },
         onSubmit: values => {
-        //close your eyes here)
+            //close your eyes here)
             debugger
             setDisabled(true)
             axios.post("https://smtp-gmail-portfolio.herokuapp.com/sendMessages", {
@@ -51,12 +53,12 @@ export const Contacts = () => {
                 message: values.message
             })
                 .then(() => {
-                    debugger
-                    console.log(values)
+                    formik.resetForm()
+                    setIsModal(true)
                 })
                 .catch(error => {
-                    debugger
-                    console.log(error.message)
+                    setIsModal(true)
+                    setMessage('Message send failed:' + error.text)
                 })
                 .finally(() => setDisabled(false))
         }
@@ -89,7 +91,7 @@ export const Contacts = () => {
                     {formik.touched.email
                     && formik.errors.email
                     &&
-                    <div style={{color: '#DEB112'}}>{formik.errors.name}</div>
+                    <div style={{color: '#DEB112'}}>{formik.errors.email}</div>
                     }
 
                     <CssTextField className={s.mUITextarea}
@@ -106,9 +108,16 @@ export const Contacts = () => {
                             style={{color: '#DEB112'}}>{formik.errors.message}</div>}
 
                     <div className={s.terms}>
-                        <button className={s.button} disabled={disabled} type="submit">Send</button>
+                        <button
+                            className={disabled ? `${s.button} ${s.disabled}` : s.button}
+                            disabled={disabled}
+                            type="submit">Send
+                        </button>
                     </div>
                 </form>
+                <Modal active={isModal} setActive={setIsModal}>
+                    {message}
+                </Modal>
             </div>
         </div>
     )
