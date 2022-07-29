@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Skills.module.scss'
-import styleContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./skill/skill";
 import {Title} from "../../common/Title/Title";
 import {
@@ -14,7 +13,6 @@ import {
 } from 'react-icons/si'
 import {FaExchangeAlt, FaWpforms} from "react-icons/fa/";
 import {FaGithubSquare} from "react-icons/fa";
-import {motion} from "framer-motion";
 import {FiFramer} from "react-icons/fi";
 
 
@@ -31,6 +29,8 @@ export const Skills = () => {
                     <Skill title={'TypeScript'}
                            icon={<SiTypescript color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'React'}
+                           icon={<SiReact color=' #FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'React Native (expo)'}
                            icon={<SiReact color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Redux/Thunk/Toolkit'}
                            icon={<SiRedux color=' #FFFFE0' size={'3rem'}/>}/>
