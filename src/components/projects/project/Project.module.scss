@@ -2,14 +2,14 @@
 @import "src/common/styles/sass/mixin";
 
 .project {
-  width: 450px;
+  width: 500px;
   background-color: $bgColor;
   @include flex(column, center, center, nowrap);
 
   .projectImage {
     @include flex(column, center, center, nowrap);
     width: 100%;
-    height: 220px;
+    height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import s from './Projects.module.scss'
 import {Project} from './project/Project';
 import {Title} from '../../common/Title/Title';
-import DemoTodolistProject from './../../assets/image/DemoTodolistProject.jpg'
-import DemoSocialNetworkProject from './../../assets/image/DemoSocialNetworkProject.png'
-import DemoFlashCardsProject from './../../assets/image/DemoFlashCardsProject.jpg'
+import DemoTodolistProject from './../../assets/image/Todolist.jpg'
+import DemoSocialNetworkProject from './../../assets/image/social.jpg'
+import DemoFlashCardsProject from './../../assets/image/LearningCards.jpg'
 import DemoTaxiApp from './../../assets/image/Taxi_app.jpg'
 import Modal from "../../common/components/Modal";
 
