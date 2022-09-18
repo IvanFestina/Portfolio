@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.95467ea3.css",
-    "main.js": "/Portfolio/static/js/main.13740272.js",
+    "main.js": "/Portfolio/static/js/main.88bf06ca.js",
     "static/media/Ava2.jpg": "/Portfolio/static/media/Ava2.3cab5267586614b568a5.jpg",
     "static/media/Taxi_app.jpg": "/Portfolio/static/media/Taxi_app.b4b521dc64592ba43629.jpg",
     "static/media/LearningCards.jpg": "/Portfolio/static/media/LearningCards.6596ebe5033fecfa9a39.jpg",
     "static/media/social.jpg": "/Portfolio/static/media/social.13eb33b80c8e0a39ac2a.jpg",
+    "static/media/SimpleNotes.jpg": "/Portfolio/static/media/SimpleNotes.7c3c76a63c7fbb893c4d.jpg",
     "static/media/Todolist.jpg": "/Portfolio/static/media/Todolist.b45b23f8aa1dd594ef9e.jpg",
     "index.html": "/Portfolio/index.html",
     "main.95467ea3.css.map": "/Portfolio/static/css/main.95467ea3.css.map",
-    "main.13740272.js.map": "/Portfolio/static/js/main.13740272.js.map"
+    "main.88bf06ca.js.map": "/Portfolio/static/js/main.88bf06ca.js.map"
   },
   "entrypoints": [
     "static/css/main.95467ea3.css",
-    "static/js/main.13740272.js"
+    "static/js/main.88bf06ca.js"
   ]
 }
