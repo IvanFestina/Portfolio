@@ -9,7 +9,8 @@ import {
     SiReact,
     SiRedux,
     SiStorybook,
-    SiTypescript
+    SiTypescript,
+    SiNextdotjs, SiNodedotjs, SiMongodb
 } from 'react-icons/si'
 import {FaExchangeAlt, FaWpforms} from "react-icons/fa/";
 import {FaGithubSquare} from "react-icons/fa";
@@ -32,11 +33,17 @@ export const Skills = () => {
                            icon={<SiReact color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'React Native (expo)'}
                            icon={<SiReact color=' #FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'Next.js'}
+                           icon={<SiNextdotjs color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Redux/Thunk/Toolkit'}
                            icon={<SiRedux color=' #FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'Node.js'}
+                           icon={<SiNodedotjs color=' #FFFFE0' size={'3rem'}/>}/>
+                    <Skill title={'MongoDB'}
+                           icon={<SiMongodb color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Formik / React-Hook-Form'}
                            icon={<FaWpforms color=' #FFFFE0' size={'3rem'}/>}/>
-                    <Skill title={'MaterialUI / AntDesign'}
+                    <Skill title={'MaterialUI'}
                            icon={<SiMaterialui color=' #FFFFE0' size={'3rem'}/>}/>
                     <Skill title={'Git / GitHub'}
                            icon={<FaGithubSquare color=' #FFFFE0' size={'3rem'}/>}/>

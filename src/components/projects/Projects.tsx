@@ -6,6 +6,7 @@ import DemoTodolistProject from './../../assets/image/Todolist.jpg'
 import DemoSocialNetworkProject from './../../assets/image/social.jpg'
 import DemoFlashCardsProject from './../../assets/image/LearningCards.jpg'
 import DemoTaxiApp from './../../assets/image/Taxi_app.jpg'
+import SimpleNotes from './../../assets/image/SimpleNotes.jpg'
 import Modal from "../../common/components/Modal";
 
 export const Projects = () => {
@@ -24,6 +25,9 @@ export const Projects = () => {
     }
     const taxiApp = {
         backgroundImage: `url( ${DemoTaxiApp})`
+    }
+    const simpleNotes = {
+        backgroundImage: `url( ${SimpleNotes})`
     }
 
 
@@ -56,6 +60,12 @@ export const Projects = () => {
                              urlCode={'https://github.com/IvanFestina/Taxi-react-native-app'}
                              setCallback={setIsModal}
                     />
+                    <Project title={'Simple Note App'}
+                             description={'App for taking notes'}
+                             style={simpleNotes}
+                             urlCode={'https://github.com/Halera-inc'}
+                             onlyCode={true}
+                    />
                 </div>
                 <Modal active={isModal} setActive={setIsModal}>
                     <iframe width="600" height="900"
@@ -63,7 +73,7 @@ export const Projects = () => {
                             title="Taxi react-native app (demo)" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen/>
-                    </Modal>
+                </Modal>
             </div>
         </div>
     )
