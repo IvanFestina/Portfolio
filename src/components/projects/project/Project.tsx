@@ -10,6 +10,7 @@ export type ProjectProps = {
     urlDemo?: string
     urlCode?: string
     setCallback?: (toggle: boolean) => void
+    onlyCode?: boolean
 }
 
 export const Project = ({
@@ -18,15 +19,17 @@ export const Project = ({
                             style,
                             urlDemo,
                             urlCode,
-                            setCallback
+                            setCallback,
+                            onlyCode
                         }: ProjectProps) => {
     return (
         <div className={s.project}>
             <motion.div
                 whileHover={{scale: 1.03, transition: {ease: "easeOut", duration: 0.5}}}
                 className={s.projectImage} style={style}>
-                {
-                    setCallback ?
+                {onlyCode ?
+                    null
+                    : setCallback ?
                         <motion.button
                             onClick={() => setCallback(true)}
                             whileTap={{scale: 1}} whileHover={{scale: 1.2}}
