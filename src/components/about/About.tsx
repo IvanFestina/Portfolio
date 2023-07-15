@@ -6,7 +6,6 @@ import {motion} from "framer-motion";
 //@ts-ignore
 import ReactTypingEffect from 'react-typing-effect'
 
-
 const titleAnimation = {
     hidden: {
         y: 100,
