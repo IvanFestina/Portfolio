@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from './Projects.module.scss'
 import {Project} from './project/Project';
 import {Title} from '../../common/Title/Title';
-import DemoTodolistProject from './../../assets/image/Todolist.jpg'
+import RightBasketApp from './../../assets/image/rightBasket.png'
 import DemoSocialNetworkProject from './../../assets/image/social.jpg'
 import DemoFlashCardsProject from './../../assets/image/LearningCards.jpg'
 import DemoTaxiApp from './../../assets/image/Taxi_app.jpg'
@@ -17,8 +17,8 @@ export const Projects = () => {
     const socialNetwork = {
         backgroundImage: `url(${DemoSocialNetworkProject})`
     }
-    const todolist = {
-        backgroundImage: `url( ${DemoTodolistProject} )`
+    const rightBasket = {
+        backgroundImage: `url( ${RightBasketApp} )`
     }
     const flashCards = {
         backgroundImage: `url( ${DemoFlashCardsProject} )`,
@@ -36,17 +36,23 @@ export const Projects = () => {
             <div className={s.projectContainer}>
                 <Title text={'Projects'} style={{color: '#FFFFE0'}}/>
                 <div id='projects' className={s.projects}>
+                    <Project title={'Right Basket App'}
+                             description={'Efficient order picking app with barcode scanning for streamlined fulfillment.'}
+                             style={rightBasket}
+                             onlyDemo
+                             urlDemo={'https://play.google.com/store/apps/details?id=com.festina.rightbasket'}
+                    />
                     <Project title={'Memorize'}
                              description={'Team project for learning and memorizing with use of cards'}
                              style={flashCards}
                              urlDemo={'https://msseleznev.github.io/friday-app'}
                              urlCode={'https://github.com/msseleznev/friday-app'}
                     />
-                    <Project title={'TodoList'}
-                             description={'Here you can find interactive todolist for your needs'}
-                             style={todolist}
-                             urlDemo={'https://ivanfestina.github.io/todolist-project'}
-                             urlCode={'https://github.com/IvanFestina/todolist-project'}
+                    <Project title={'Simple Note App'}
+                             description={'App for taking notes'}
+                             style={simpleNotes}
+                             urlCode={'https://github.com/Halera-inc'}
+                             onlyCode={true}
                     />
                     <Project title={'Social Network Project'}
                              description={'This is a model of basic social network to assess my skill'}
@@ -59,12 +65,6 @@ export const Projects = () => {
                              style={taxiApp}
                              urlCode={'https://github.com/IvanFestina/Taxi-react-native-app'}
                              setCallback={setIsModal}
-                    />
-                    <Project title={'Simple Note App'}
-                             description={'App for taking notes'}
-                             style={simpleNotes}
-                             urlCode={'https://github.com/Halera-inc'}
-                             onlyCode={true}
                     />
                 </div>
                 <Modal active={isModal} setActive={setIsModal}>

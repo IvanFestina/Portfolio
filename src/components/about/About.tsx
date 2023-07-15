@@ -38,7 +38,7 @@ export const About = () => {
                             speed={100}
                             eraseSpeed = {100}
                             typingDelay ={800}
-                            text={["Front-end developer"]}
+                            text={["React Native developer"]}
                         />
                 </div>
                 <div className={s.photo} style={Main_Photo}/>

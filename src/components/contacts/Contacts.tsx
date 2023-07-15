@@ -68,6 +68,7 @@ export const Contacts = () => {
         <div id='contacts' className={s.contactsBlock}>
             <div className={s.contactsContainer}>
                 <Title text={'Contacts'} style={{color: '#294861'}}/>
+                <p className={s.textUnderTitle}>Let's build amazing mobile apps together!</p>
                 <form className={s.form} onSubmit={formik.handleSubmit}>
                     <CssTextField className={s.mUIInput}
                                   InputLabelProps={{className: s.label}}
