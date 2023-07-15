@@ -11,6 +11,7 @@ export type ProjectProps = {
     urlCode?: string
     setCallback?: (toggle: boolean) => void
     onlyCode?: boolean
+    onlyDemo?: boolean
 }
 
 export const Project = ({
@@ -20,7 +21,8 @@ export const Project = ({
                             urlDemo,
                             urlCode,
                             setCallback,
-                            onlyCode
+                            onlyCode,
+                            onlyDemo
                         }: ProjectProps) => {
     return (
         <div className={s.project}>
@@ -44,12 +46,15 @@ export const Project = ({
                             </motion.button>
                         </a>
                 }
-                <a href={urlCode}>
-                    <motion.button whileTap={{scale: 1}} whileHover={{scale: 1.2}}
-                                   transition={{type: "spring", stiffness: 300}}
-                                   className={s.viewBtn}>Code
-                    </motion.button>
-                </a>
+                {
+                    onlyDemo ?
+                        null
+                        : <a href={urlCode}>
+                            <motion.button whileTap={{scale: 1}} whileHover={{scale: 1.2}}
+                                           transition={{type: "spring", stiffness: 300}}
+                                           className={s.viewBtn}>Code
+                            </motion.button>
+                        </a>}
             </motion.div>
             <div className={s.projectInfo}>
                 <h3 className={s.projectTitle}>{title}</h3>
