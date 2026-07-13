@@ -4,7 +4,7 @@ const groups: Group[] = [
   {
     name: 'mobile / frontend',
     items:
-      'React Native (0.81) · New Architecture (Fabric, TurboModules, JSI) · Hermes · Nitro Modules · native modules · React (19) · TypeScript 5 (strict) · Redux Toolkit · RTK Query · React Navigation 7 · Reanimated · Skia · react-native-mmkv · Jest · Detox (E2E) · JavaScript/ES6+ · HTML5 · CSS/SCSS · Tailwind',
+      'React Native · New Architecture (Fabric, TurboModules, JSI) · Hermes · Nitro Modules · native modules · React · TypeScript (strict) · Redux Toolkit · RTK Query · React Navigation · Reanimated · Skia · react-native-mmkv · Jest · Detox (E2E) · JavaScript/ES6+ · HTML5 · CSS/SCSS · Tailwind',
   },
   {
     name: 'devops / infra',

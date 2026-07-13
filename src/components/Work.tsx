@@ -34,7 +34,7 @@ const projects: Project[] = [
   },
   {
     eyebrow: 'WestPower · 2022 – 2023',
-    title: '«Правильная корзинка» Сборщик + LeMurrr',
+    title: 'Order Picker for Pravilnaya Korzinka + LeMurrr',
     description:
       'Order-picking app for a B2B grocery retail chain, built from scratch and deployed across 200+ stores: order intake, barcode scanning, delivery handoff, in-app payment. Also shipped the chain’s customer app and LeMurrr, a pet-supplies store app — running the full release cycle solo with OTA updates (EAS).',
     facts: [
@@ -45,7 +45,7 @@ const projects: Project[] = [
     live: true,
     links: [
       {
-        label: 'Google Play — Сборщик',
+        label: 'Google Play — Picker app',
         href: 'https://play.google.com/store/apps/details?id=com.festina.rightbasket',
       },
       {

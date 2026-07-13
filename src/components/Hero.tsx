@@ -25,7 +25,6 @@ export function Hero() {
         <p className="mt-2 text-lg text-muted">
           React Native Developer <span className="text-ink">·</span> React · TypeScript, expanding into DevOps
         </p>
-        <p className="mt-1 text-sm text-muted">Saint Petersburg, Russia · open to relocation</p>
         <ul className="mt-5 flex flex-wrap gap-2.5">
           {links.map((l) => (
             <li key={l.label}>
