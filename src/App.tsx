@@ -1,4 +1,6 @@
+import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
+import { Skills } from './components/Skills'
 import { ThemeToggle } from './components/ThemeToggle'
 import { Work } from './components/Work'
 
@@ -11,10 +13,12 @@ function App() {
         </span>
         <ThemeToggle />
       </header>
-      <main className="pt-14 pb-24 sm:pt-20">
+      <main className="pt-14 pb-20 sm:pt-20">
         <Hero />
         <Work />
+        <Skills />
       </main>
+      <Footer />
     </div>
   )
 }
