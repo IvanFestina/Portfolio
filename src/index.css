@@ -8,6 +8,7 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-line: var(--line);
+  --color-ok: var(--ok);
   --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
@@ -19,6 +20,7 @@
   --muted: #5a6674;
   --accent: #1f3a5f;
   --line: #dde2e9;
+  --ok: #2e6b45;
   color-scheme: light;
 }
 
@@ -29,6 +31,7 @@
   --muted: #97a3b4;
   --accent: #8fb3dc;
   --line: #293444;
+  --ok: #85c29d;
   color-scheme: dark;
 }
 

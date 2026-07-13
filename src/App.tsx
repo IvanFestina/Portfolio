@@ -1,5 +1,6 @@
 import { Hero } from './components/Hero'
 import { ThemeToggle } from './components/ThemeToggle'
+import { Work } from './components/Work'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
       <main className="pt-14 pb-24 sm:pt-20">
         <Hero />
+        <Work />
       </main>
     </div>
   )
