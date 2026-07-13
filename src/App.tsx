@@ -1,23 +1,10 @@
-import React from 'react';
-import './App.css';
-import {Header} from "./components/header/Header";
-import {About} from "./components/about/About";
-import {Skills} from "./components/skills/Skills";
-import {Projects} from "./components/projects/Projects";
-import {Contacts} from "./components/contacts/Contacts";
-import {Footer} from "./components/footer/Footer";
-
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contacts/>
-      <Footer/>
-    </div>
-  );
+    <main className="mx-auto max-w-3xl px-6 py-16">
+      <h1 className="text-3xl font-semibold">Ivan Andreev</h1>
+      <p className="mt-2 text-neutral-500">Portfolio — under construction (bucket 0 skeleton)</p>
+    </main>
+  )
 }
 
 export default App
