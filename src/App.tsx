@@ -1,9 +1,19 @@
+import { Hero } from './components/Hero'
+import { ThemeToggle } from './components/ThemeToggle'
+
 function App() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="text-3xl font-semibold">Ivan Andreev</h1>
-      <p className="mt-2 text-neutral-500">Portfolio — under construction (bucket 0 skeleton)</p>
-    </main>
+    <div className="mx-auto max-w-2xl px-6">
+      <header className="flex items-center justify-between pt-6">
+        <span className="font-mono text-sm text-muted" aria-hidden="true">
+          ~/ivan-andreev
+        </span>
+        <ThemeToggle />
+      </header>
+      <main className="pt-14 pb-24 sm:pt-20">
+        <Hero />
+      </main>
+    </div>
   )
 }
 
