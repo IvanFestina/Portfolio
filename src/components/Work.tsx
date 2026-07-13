@@ -59,7 +59,7 @@ const projects: Project[] = [
     eyebrow: 'Personal DevOps lab',
     title: 'ops-forge',
     description:
-      'A Dockerized full-stack environment: NestJS backend, React / Vite / Tailwind frontend, a Dockerfile per service, an nginx reverse proxy, a Makefile, and Playwright E2E tests.',
+      'Hands-on DevOps practice ground — a Dockerized full-stack environment: NestJS backend, React / Vite / Tailwind frontend, a Dockerfile per service, an nginx reverse proxy, and Playwright E2E tests.',
     facts: [
       { key: 'stack', value: 'Docker · NestJS · React' },
       { key: 'e2e', value: 'Playwright' },

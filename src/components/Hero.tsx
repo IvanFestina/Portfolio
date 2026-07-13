@@ -20,10 +20,10 @@ export function Hero() {
         className="size-24 rounded-full border border-line object-cover sm:size-28"
       />
       <div>
-        <p className="font-mono text-xs text-muted">5+ years · iOS &amp; Android · production B2B apps</p>
+        <p className="font-mono text-xs text-muted">5+ years · iOS &amp; Android · production apps</p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Ivan Andreev</h1>
         <p className="mt-2 text-lg text-muted">
-          React Native Developer <span className="text-ink">·</span> React · TypeScript, expanding into DevOps
+          React Native Developer <span className="text-ink">·</span> React · TypeScript — expanding into DevOps
         </p>
         <ul className="mt-5 flex flex-wrap gap-2.5">
           {links.map((l) => (
