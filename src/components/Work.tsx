@@ -16,7 +16,7 @@ const projects: Project[] = [
     eyebrow: 'Sber Business Soft · 2023 – present',
     title: 'My CRM («Мой CRM»)',
     description:
-      'Enterprise CRM for iOS and Android built on a configurable entity engine — almost no static screens. Top-3 contributor for ~3 years: major React Native / React / TypeScript upgrades across a ~130-screen codebase, design-system migration (~116 components), real-time chat with voice messages, Skia charts, and the filtering subsystem.',
+      'Led the migration of a roughly 130-screen enterprise CRM to React Native’s New Architecture on iOS and Android. Built configurable filters and real-time chat with voice messaging. Streamlined the mobile CI/CD pipeline with Jenkins and fastlane. I submit each release build for security review and address reported vulnerabilities before publication.',
     facts: [
       { key: 'platform', value: 'iOS · Android' },
       { key: 'users', value: '~5.2K MAU' },
